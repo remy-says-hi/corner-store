@@ -1,9 +1,9 @@
 import { getRandomWords } from './services/randomWord-service';
 import { getBooks } from './services/newYorkTimes-service';
 import $ from 'jquery'
-import { Character } from './character';
-import { Book } from './book';
-import { CornerStore } from './cornerStore';
+import { Character } from './classes/character';
+import { Book } from './classes/book';
+import { CornerStore } from './classes/cornerStore';
 import './styles.css';
 
 const myCornerStore = new CornerStore(); // mock database

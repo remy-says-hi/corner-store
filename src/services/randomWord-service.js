@@ -1,6 +1,6 @@
 export async function getRandomWords() {
   try {
-    let response = await fetch('https://random-word-api.herokuapp.com/word?number=4')
+    let response = await fetch('https://random-word-api.herokuapp.com/word?number=4');
     let jsonifiedResponse;
     if (response.ok && response.status == 200) {
       jsonifiedResponse = await response.json();
