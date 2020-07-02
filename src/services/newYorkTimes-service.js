@@ -1,3 +1,4 @@
+// fetch() with async + await; A recommended route for making api calls
 export async function getBooks() {
   try {
     let response = await fetch(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${process.env.API_KEY_NY}`)
@@ -31,10 +32,10 @@ export async function getBooks() {
 //   });
 
 //   return promise.then(function(response) {
-//     return JSON.parse(response);
+//     return JSON.parse(response); // resolve
 //   }, function(error) {
 //     console.log(error)
-//     return false;
+//     return false; // reject
 //   });
 // }
 

@@ -1,3 +1,4 @@
+// fetch() with async + await; A recommended route for making api calls
 export async function getRandomWords() {
   try {
     let response = await fetch('https://random-word-api.herokuapp.com/word?number=4');
@@ -9,10 +10,12 @@ export async function getRandomWords() {
     }
     return jsonifiedResponse;
   } catch(error) {
-    return error;
+    console.log(error)
+    return false;
   }
 }
 
+// This uses fetch() alone
 // export function getRandomWords() {
 //   return fetch('https://random-word-api.herokuapp.com/word?number=4')
 //   .then((response) => { // resolve

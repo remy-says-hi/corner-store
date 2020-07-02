@@ -1,4 +1,4 @@
-// plain XHR 
+// example from curriculum of an XHR from the weather api. This is not used in this project. For reference only.
 let request = new XMLHttpRequest();
 const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`;
 

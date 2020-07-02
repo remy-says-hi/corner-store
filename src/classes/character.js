@@ -1,3 +1,4 @@
+// The Character class will hold information about the game character. There temperament, personality, greatest strength and greatest weakness are determined by calling a random word api
 export class Character {
   constructor(name){
     this.name = name;
